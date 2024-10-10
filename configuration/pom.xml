@@ -11,8 +11,9 @@
 	<groupId>project.myvet</groupId>
 	<artifactId>configuration</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>configuration</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Course 4 Phase End Project - Configuration Server</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -44,6 +45,11 @@
 			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
