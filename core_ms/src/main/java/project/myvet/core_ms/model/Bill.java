@@ -13,16 +13,16 @@ public class Bill {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 	private Integer ownerId;
-	private Integer visitRate;
+	private Double visitRate;
 	private Integer numberPets;
-	private Integer totalBill;
+	private Double totalBill;
 	
 	// Constructors
 	public Bill() {
 		super();
 	}
 
-	public Bill(Integer id, Integer ownerId, Integer visitRate, Integer numberPets, Integer totalBill) {
+	public Bill(Integer id, Integer ownerId, Double visitRate, Integer numberPets, Double totalBill) {
 		super();
 		this.id = id;
 		this.ownerId = ownerId;
@@ -48,11 +48,11 @@ public class Bill {
 		this.ownerId = ownerId;
 	}
 
-	public Integer getVisitRate() {
+	public Double getVisitRate() {
 		return visitRate;
 	}
 
-	public void setVisitRate(Integer visitRate) {
+	public void setVisitRate(Double visitRate) {
 		this.visitRate = visitRate;
 	}
 
@@ -64,11 +64,11 @@ public class Bill {
 		this.numberPets = numberPets;
 	}
 
-	public Integer getTotalBill() {
+	public Double getTotalBill() {
 		return totalBill;
 	}
 
-	public void setTotalBill(Integer totalBill) {
+	public void setTotalBill(Double totalBill) {
 		this.totalBill = totalBill;
 	}
 
